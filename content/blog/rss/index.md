@@ -2,7 +2,6 @@
 title: "Qué es RSS y cómo usarlo"
 date: 2021-05-06T23:18:23-05:00
 draft: false
-lastmod: 2021-09-04T23:18:23-05:00 
 tags:
   - tecnología
   - rss

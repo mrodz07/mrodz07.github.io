@@ -2,7 +2,6 @@
 title: "¿Cuál es el mejor navegador web?"
 date: 2022-10-06T22:08:37-05:00
 draft: false
-lastmod: null
 tags:
   - tecnología
   - navegador

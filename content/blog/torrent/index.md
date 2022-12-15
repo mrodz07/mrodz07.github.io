@@ -2,7 +2,6 @@
 title: "Guía básica de torrent"
 date: 2021-10-29T23:18:23-05:00
 draft: false
-lastmod: 2021-10-29T23:18:23-05:00
 tags:
   - torrent
   - tecnología
