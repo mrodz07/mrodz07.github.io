@@ -17,13 +17,13 @@
 
     <div class='page__content'>
       <section class='content'>
+      {{block "prologue" .}}{{end}}
+        {{block "article" .}}
         <main class='content__article'>
-          {{block "article" .}}
-          <article class='article'>
-            {{.Content}}
-          </article>
-          {{end}}
+          {{partial "article.html" (dict "context" .)}}
         </main>
+        {{end}}
+      {{block "epilogue" .}}{{end}}
       </section>
     </div>
 

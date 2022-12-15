@@ -1,0 +1,52 @@
+{{$styleScratch:= newScratch}}
+{{with .context.Type}}
+  {{if (eq . "blog")}}
+    {{$styleScratch.Set "articleType" "article--blog"}}
+  {{else if (eq . "podcast")}}
+    {{$styleScratch.Set "articleType" "article--podcast"}}
+  {{else if (eq . "announcements")}}
+    {{$styleScratch.Set "articleType" "article--announcements"}}
+  {{else if (eq . "contact")}}
+    {{$styleScratch.Set "articleType" "article--contact"}}
+  {{end}}
+{{end}}
+
+<article class='article {{$styleScratch.Get "articleType"}}'>
+  <header {{if not ($styleScratch.Get "articleType")}}style='display: none;'{{end}}> 
+    <h1 class='article__title'>{{.context.Title}}</h1>
+    <section class='article__time'>
+      {{with .context.Date}}
+      <time class='pub-time' datetime='{{.Format "2006-01-02"}}'>Publicado el {{.Format "02-01-2006"}}. {{if not (eq . $.context.Lastmod)}}Actualizado el {{$.context.Lastmod.Format "02-01-2006"}}{{end}}</time>
+      {{end}}
+    </section>
+    {{with .context.Params.tags}}
+    <section class='article__tags'>
+      {{range .}}
+      <a class='article__tag' href='{{"/tags/" | relLangURL}}{{- . | urlize}}'>#{{. | humanize}}</a>
+      {{end}}
+    </section>
+    {{end}}
+  </header>
+
+  {{if .context.Param "toc"}}
+  <section class="content-table">
+    <h3>Tabla de contenidos</h3>
+    {{.TableOfContents}}
+  </section>
+  {{end}}
+
+  <div class='article__content'>
+  {{.context.Content}}
+  </div>
+
+  {{with site.RegularPages.Related .context}}
+  <aside class='article__related'>
+    <h2>Páginas relacionadas</h2>
+    <ul class='article__related-pages'>
+      {{range first 3 .}}
+        {{partialCached "card.html" . .Permalink}} 
+      {{end}}
+    </ul>
+  </aside>
+  {{end}}
+</article>
