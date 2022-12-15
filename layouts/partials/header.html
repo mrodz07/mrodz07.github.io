@@ -1,4 +1,4 @@
-<div id='header-main'>
-  <h1>Mario Rodríguez</h1>
-  <h3>Programación</h3>
-</div>
+<header class='header {{with default "false" .isMain }} {{if eq . "true"}} header--main {{end}} {{end}}'>
+  <h1 class='header__title'>Mario Rodríguez</h1>
+  <h3 class='header_subtitle'>Programación</h3>
+</header>

@@ -7,15 +7,12 @@
 {{end}}
   <body>
     {{block "header" .}}
-    <header>
-      {{partial "header.html" .}}
+      {{partial "header.html" (dict "isMain" "true" "context" .)}}
       {{block "navbar" .}}
         <nav>
         {{partial "menu.html" (dict "Menu" site.Menus.main "Class" "list-main" "Title" .Title)}}
         </nav>
       {{end}}
-      <div class='header-box'></div>
-    </header>
     {{end}}
 
     <div class='content-main {{block "mainClass" .}} {{.}} {{end}}'>

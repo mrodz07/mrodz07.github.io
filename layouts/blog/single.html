@@ -1,6 +1,6 @@
 {{define "header"}}
 <header>
-  {{partial "header.html" .}}
+  {{partial "header.html" (dict "context" .)}}
   {{block "navbar" .}}
     <nav>
     {{partialCached "menu.html" (dict "Menu" site.Menus.main "Class" "list-main" "Title" "Blog") "blog"}}
