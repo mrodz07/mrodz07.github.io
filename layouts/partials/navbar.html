@@ -1,0 +1,11 @@
+<navbar class='navbar {{with .navbarModifier}} . {{end}}'>
+  <ul class='navbar__item-list'>
+    {{with default site.Menus.main .menu}}
+      {{range .}}
+      <li class='navbar__item {{if (eq .Name $.context.Title)}} navbar__item--selected {{end}}'>
+        <a href='{{.URL}}'>{{.Name | humanize}}</a>
+      </li>
+      {{end}}
+    {{end}}
+  </ul>
+</navbar>

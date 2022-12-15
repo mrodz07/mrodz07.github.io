@@ -9,9 +9,7 @@
     {{block "header" .}}
       {{partial "header.html" (dict "isMain" "true" "context" .)}}
       {{block "navbar" .}}
-        <nav>
-        {{partial "menu.html" (dict "Menu" site.Menus.main "Class" "list-main" "Title" .Title)}}
-        </nav>
+        {{partial "navbar.html" (dict "context" .)}}
       {{end}}
     {{end}}
 

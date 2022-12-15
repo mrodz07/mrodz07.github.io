@@ -2,9 +2,7 @@
 <header>
   {{partial "header.html" (dict "context" .)}}
   {{block "navbar" .}}
-    <nav>
-    {{partialCached "menu.html" (dict "Menu" site.Menus.main "Class" "list-main" "Title" "Blog") "blog"}}
-    </nav>
+    {{partialCached "navbar.html" (dict "context" .)}}
   {{end}}
   <div class='header-box'></div>
 </header>
