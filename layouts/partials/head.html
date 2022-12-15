@@ -1,39 +1,30 @@
-{{$themeCss:= resources.GetMatch "css/style.css"}}
-{{if $themeCss}}
-  {{$themeCss:= $themeCss | minify}}
-{{end}}
-{{$title:= default .Title $.Title}}
 <head>
-  <meta charset='utf-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  {{with default .Title site.Author.name}}
-  <meta name='author' content='{{.}}'>
+  <meta charset='utf-8'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+  {{with site.Author.name}}
+  <meta name='author' content='{{.}}'/>
   {{end}}
-  {{with default site.Params.copyright}}
-  <meta name='copyright' content='{{.}}'>
+  {{with default site.Author.name site.Params.copyright}}
+  <meta name='copyright' content='{{.}}'/>
   {{end}}
-  {{with default .Summary .Description}}
-  <meta name='description' content='{{.}}'>
+  {{with default .context.Summary .context.Description}}
+  <meta name='description' content='{{.}}'/>
   {{end}}
-  {{with .Params.tags}}
-  <meta name='keywords' content='{{delimit . ", "}}'>
+  {{with site.Params.tags}}
+  <meta name='keywords' content='{{delimit . ", "}}'/>
   {{end}}
-  {{with default $themeCss site.Params.CSS}}
-  <link type='text/css' rel='stylesheet' href='{{. | absURL}}'>
+  {{with site.Params.styleSheetRoute}}
+  <link type='text/css' rel='stylesheet' href='{{. | absURL}}'/>
   {{end}}
-	{{with default "/favicon.ico" .Site.Params.favicon}}
-  <link rel='icon' href='{{.}}'>
+	{{with site.Params.faviconRoute}}
+  <link rel='icon' href='{{.}}'/>
 	{{end}}
-  {{- with $.RSS -}}
-    {{if $.RSSTitle}}
-    <link rel="alternate" type="application/rss+xml" href="{{.}}" title="{{$.RSSTitle | safeHTML}}" />
-    {{else}}
-    <link rel="alternate" type="application/rss+xml" href="{{.}}" title="{{site.Title | safeHTML}}" />
-    {{end}}
-  {{ end }}
-  {{ template "_internal/twitter_cards.html" .}}
-  {{ template "_internal/opengraph.html" .}}
-  {{with default site.Title $title}}
+  {{with site.Params.feedRoute}}
+  <link rel='alternate' type='application/rss+xml' href='{{.}}' title='{{with site.Params.feedTitle}} {{. | safeHTML}} {{end}}'/>
+  {{end}}
+  {{template "_internal/twitter_cards.html" .context}}
+  {{template "_internal/opengraph.html" .context}}
+  {{with default site.Title .context.Title}}
   <title>{{.}} - {{site.Author.name}}</title>
   {{end}}
 </head>

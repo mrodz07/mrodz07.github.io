@@ -3,7 +3,7 @@
 <html lang='{{.}}'>
 {{end}}
 {{block "head" .}}
-  {{partial "head.html" (dict "Title" .Title "RSS" site.Params.RSS "RSSTitle" site.Params.RSSTitle)}}
+  {{partial "head.html" (dict "context" .)}}
 {{end}}
   <body>
     {{block "header" .}}

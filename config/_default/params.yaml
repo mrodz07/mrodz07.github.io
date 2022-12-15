@@ -1,3 +1,4 @@
-CSS: /css/style.css
-RSS: /blog/rss.xml
-RSSTitle: Blog de Mario Rodríguez
+styleSheetRoute: /css/style.css
+faviconRoute: /favicon.ico
+feedRoute: /blog/rss.xml
+feedTitle: Blog de Mario Rodríguez
