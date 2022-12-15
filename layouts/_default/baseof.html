@@ -8,13 +8,14 @@
   <body class='page'>
     {{block "header" .}}
     <div class='page__header'>
-        {{partial "header.html" (dict "context" .)}}
-        {{block "navbar" .}}
-          {{partial "navbar.html" (dict "navbarModifier" "navbar--menu" "context" .)}}
-        {{end}}
+      {{partialCached "header.html" (dict "context" .)}}
+      {{block "navbar" .}}
+        {{partial "navbar.html" (dict "navbarModifier" "navbar--menu" "context" .)}}
+      {{end}}
     </div>
     {{end}}
 
+    {{block "content" .}}
     <div class='page__content'>
       <section class='content'>
       {{block "prologue" .}}{{end}}
@@ -26,13 +27,11 @@
       {{block "epilogue" .}}{{end}}
       </section>
     </div>
+    {{end}}
 
     {{block "footer" .}}
     <div class='page__footer'>
-      <footer class='footer'>
-        {{/*Cambiar a navbar*/}}
-        {{partialCached "socials.html" . "main"}}
-      </footer>
+      {{partial "footer.html" (dict "context" .)}}
     </div>
     {{end}}
 	</body>
