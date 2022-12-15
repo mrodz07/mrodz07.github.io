@@ -1,0 +1,19 @@
+{{$monthMap := site.Data.months_map}}
+{{$supportPage := ref $ "apoyo.md"}}
+<ul class='footer-options'>
+  {{with and .GitInfo $monthMap}}
+  <li>
+    <time datetime='{{site.LastChange.Format "02"}} {{index $monthMap (site.LastChange.Format "1")}} {{site.LastChange.Format "2006"}}'>{{site.LastChange.Format "02"}} {{index $monthMap (site.LastChange.Format "1")}} {{site.LastChange.Format "2006"}}</time>
+  </li>
+  {{with $supportPage}}
+  <li>
+    <a href="{{.}}">Apoya la página</a>
+  </li>
+  {{end}}
+  {{end}}
+  {{with site.Copyright}}
+  <li>
+    {{ . | markdownify}}
+  </li>
+  {{end}}
+</ul>

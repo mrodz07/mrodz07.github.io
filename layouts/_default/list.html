@@ -1,0 +1,23 @@
+{{define "head"}}
+  {{if (not (eq .Title (.Type | humanize)))}}
+    {{partial "head.html" (dict "Title" (.Title | printf "%s %s" (.Type | singularize) | humanize))}}
+  {{else}}
+    {{partial "head.html" (dict "Title" .Title)}}
+  {{end}}
+{{end}}
+{{define "body"}}
+  {{.Content}}
+  {{with .Paginator.Pages}}
+  <ul class="list posts">
+    {{if (not (eq $.Title ($.Type | humanize)))}}
+      <h2>{{$.Title | printf "%s %s" ($.Type | singularize) | humanize}}</h2>
+    {{else}}
+      <h2>{{$.Title | humanize}}</h2>
+    {{end}}
+    {{range .ByDate.Reverse}}
+      {{partialCached "card.html" . .Permalink}}
+    {{end}}
+  </ul>
+  {{end}}
+  {{template "_internal/pagination.html" .}}
+{{end}}

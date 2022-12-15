@@ -1,0 +1,55 @@
+{{define "header"}}
+<header>
+  {{partial "header.html" .}}
+  {{block "navbar" .}}
+    <nav>
+    {{partialCached "menu.html" (dict "Menu" site.Menus.main "Class" "list-main" "Title" "Blog") "blog"}}
+    </nav>
+  {{end}}
+  <div class='header-box'></div>
+</header>
+{{end}}
+{{define "body"}}
+<div class='pub-info'>
+  {{with .Title}}
+  <h2 class='title'>{{.}}</h2>
+  {{end}}
+  {{with .Date}}
+  <div class='pub-info-time'>
+  {{if not (eq $.Lastmod .)}}
+    <time datetime='{{.Format "02"}}-{{.Format "01"}}-{{.Format "2006"}}'>Publicado el {{.Format "02"}}-{{.Format "01"}}-{{.Format "2006"}}. Actualizado el {{$.Lastmod.Format "02"}}-{{$.Lastmod.Format "01"}}-{{$.Lastmod.Format "2006"}}.</time>
+  {{else}}
+    <time datetime='{{.Format "02"}}-{{.Format "01"}}-{{.Format "2006"}}'>Publicado el {{.Format "02"}}-{{.Format "01"}}-{{.Format "2006"}}</time>
+  {{end}}
+  </div>
+  {{end}}
+  {{with .Params.tags}}
+  <div class='pub-info-tags'>
+  {{range .}}
+    <a class='pub-info-tag'
+      href='{{"/tags/" | relLangURL}}
+      {{- . | urlize}}'>
+      #{{. | humanize}}
+    </a>
+  {{end}}
+  </div>
+  {{end}}
+</div>
+{{if .Param "toc"}}
+<div class="content-table">
+  <h3>Tabla de contenidos</h3>
+  {{.TableOfContents}}
+</div>
+{{end}}
+{{.Content}}
+{{with site.RegularPages.Related .}}
+<div id='related'>
+  <h2>Páginas relacionadas</h2>
+  <ul class='posts'>
+    {{range first 3 .}}
+      {{partialCached "card.html" . .Permalink}} 
+    {{end}}
+  </ul>
+</div>
+{{end}}
+{{end}}

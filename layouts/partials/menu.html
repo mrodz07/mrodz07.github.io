@@ -1,0 +1,20 @@
+{{with $.Menu}}
+{{with $.Class}}
+{{with $.Title}}
+<ul class="{{$.Class}}">
+{{else}}
+<ul>
+{{end}}
+  {{range $.Menu}}
+    <li>
+      <a href="{{.URL}}">{{.Name | humanize}}</a>
+      {{if (eq .Name $.Title)}}
+      <div class="nav-link-box selected"></div>
+      {{else}}
+      <div class="nav-link-box"></div>
+      {{end}}
+    </li>
+  {{end}}
+</ul>
+{{end}}
+{{end}}

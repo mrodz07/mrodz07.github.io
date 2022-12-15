@@ -1,0 +1,32 @@
+baseURL: https://mariorodriguez.xyz/
+languageCode: es-mx
+title: Mario Rodríguez
+enableGitInfo: true
+Paginate: 9
+frontmatter:
+  date:
+  - date
+  - publishDate
+  - lastmod
+  lastmod:
+  - lastmod
+  - date
+  - publishDate
+rssLimit: 20
+copyright: CC BY-SA
+outputFormats:
+  RSS:
+    mediatype: application/rss
+    baseName: rss
+outputs:
+  home:
+    - HTML
+  page:
+    - HTML
+  section:
+    - HTML
+    - RSS
+  taxonomyTerm:
+    - HTML
+  taxonomy:
+    - HTML

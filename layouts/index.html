@@ -1,0 +1,18 @@
+{{define "mainClass"}}index page{{end}}
+{{define "body"}}
+  {{$image := resources.Get "img/foto_personal_sm.jpg"}}
+  <div class='main-box'> 
+    <div class='main-desc'>
+      {{.Content}}
+    </div>
+    {{with $image}}
+    <div class='main-image-container'>
+      <img id='main-image' src='{{.Permalink}}' title='Una foto mia' alt='Yo desde un plano medio'>
+    <div>
+    {{end}}
+  <!--
+    <div class='main-links'>
+    </div>
+  -->
+  </div>
+{{end}}

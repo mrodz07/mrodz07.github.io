@@ -1,0 +1,20 @@
+{{$summarySize := 200}}
+{{with $.Type}}
+<li class="{{. | singularize}} post">
+{{else}}
+<li class="post">
+{{end}}
+  <a href="{{.Permalink}}">
+    <h4>
+        {{.Title}}
+    </h4>
+    <article>
+      {{if and (eq $.Type "blog") (gt (len .Summary) $summarySize)}}
+        {{slicestr .Summary 0 (sub $summarySize 1) | markdownify}}...
+      {{else}}
+        {{.Summary}}
+      {{end}}
+    </article>
+    <div>Leer más</div>
+  </a>
+</li>

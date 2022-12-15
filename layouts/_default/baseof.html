@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{{with default "en-us" site.LanguageCode}}
+<html lang='{{.}}'>
+{{end}}
+{{block "head" .}}
+  {{partial "head.html" (dict "Title" .Title "RSS" site.Params.RSS "RSSTitle" site.Params.RSSTitle)}}
+{{end}}
+  <body>
+    {{block "header" .}}
+    <header>
+      {{partial "header.html" .}}
+      {{block "navbar" .}}
+        <nav>
+        {{partial "menu.html" (dict "Menu" site.Menus.main "Class" "list-main" "Title" .Title)}}
+        </nav>
+      {{end}}
+      <div class='header-box'></div>
+    </header>
+    {{end}}
+
+    <div class='content-main {{block "mainClass" .}} {{.}} {{end}}'>
+      <div class='content-box content-box--gray'> 
+        <main>
+        {{block "body" .}}
+        {{.Content}}
+        {{end}}
+        </main>
+      </div>
+    </div>
+
+    {{block "footer" .}}
+		<footer>
+      <nav>
+      <div class='list-networks-box'></div>
+      {{partialCached "socials.html" . "main"}}
+      <div class='list-networks-box'></div>
+      </nav>
+      <nav>
+      {{partialCached "footeropts.html" . "main"}}
+      </nav>
+      <div class='footer-box'></div>
+		</footer>
+    {{end}}
+	</body>
+</html>
