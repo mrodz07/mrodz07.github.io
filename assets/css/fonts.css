@@ -1,0 +1,45 @@
+:root {
+  --font-name: 'OpenSans';
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('{{(resources.Get "/webfonts/OpenSans-Light-webfont.woff").Permalink}}') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('{{(resources.Get "/webfonts/OpenSans-Bold-webfont.woff").Permalink}}') format('woff');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('{{(resources.Get "/webfonts/OpenSans-Italic-webfont.woff").Permalink}}') format('woff');
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('{{(resources.Get "/webfonts/OpenSans-BoldItalic-webfont.woff").Permalink}}') format('woff');
+    font-style: italic;
+    font-weight: bold;
+}
+
+@font-face {
+  font-family: 'QuickSand';
+  font-weight: normal;
+  font-style: normal;
+  src: url('{{(resources.Get "/webfonts/Quicksand-Light.woff").Permalink}}') format('woff');
+}
+
+@font-face {
+  font-family: 'QuickSand';
+  font-weight: bold;
+  font-style: normal;
+  src: url('{{(resources.Get "/webfonts/Quicksand-Bold.woff").Permalink}}') format('woff');
+}

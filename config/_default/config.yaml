@@ -9,25 +9,25 @@ menu:
   footer:
   - identifier: Email
     name: Email
-    pre: "/svg/email.svg"
+    pre: "/img/icons/email.svg"
     post: "Mi email personal"
     url: "mailto:mario@mariorodriguez.xyz"
     weight: 100
   - identifier: Git
     name: Git
-    pre: "/svg/git.svg"
+    pre: "/img/icons/git.svg"
     post: "Liga a mis repositorios personales"
     url: "https://git.mariorodriguez.xyz"
     weight: 110
   - identifier: Xmpp
     name: Xmpp
-    pre: "/svg/xmpp.svg"
+    pre: "/img/icons/xmpp.svg"
     post: "Chat para conversar"
     url: "xmpp:mra@trashserver.net"
     weight: 120
   - identifier: Feed
     name: RSS
-    pre: "/svg/rss.svg" 
+    pre: "/img/icons/rss.svg" 
     post: "Sígueme por RSS"
     url: "/index.xml"
     weight: 130

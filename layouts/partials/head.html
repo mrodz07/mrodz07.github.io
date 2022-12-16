@@ -14,7 +14,7 @@
   <meta name='keywords' content='{{delimit . ", "}}'/>
   {{end}}
   {{with site.Params.styleSheetRoute}}
-  <link type='text/css' rel='stylesheet' href='{{. | absURL}}'/>
+  <link type='text/css' rel='stylesheet' href='{{(resources.Match "css/*.css" | resources.Concat "main.css" | resources.ExecuteAsTemplate "main.css" . | toCSS).Permalink}}'/>
   {{end}}
 	{{with site.Params.faviconRoute}}
   <link rel='icon' href='{{.}}'/>
