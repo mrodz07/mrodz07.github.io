@@ -2,8 +2,14 @@
   <ul class='navbar__item-list'>
     {{with default site.Menus.main .siteMenu}}
       {{range .}}
-      <li class='navbar__item {{if (eq .Name $.context.Title)}} navbar__item--selected {{end}}'>
-        <a href='{{.URL}}'>{{.Name | humanize}}</a>
+      <li class='navbar__item{{if (eq .Name $.context.Title)}} navbar__item--selected{{end}}'>
+        <a href='{{.URL | safeURL}}'>
+        {{if .Pre}}
+          <img alt='{{with .Post}}{{.}}{{end}}' src='{{(resources.GetMatch .Pre).Permalink}}' title='Logo de {{.Name | humanize}}'/>
+        {{else}}
+          {{.Name | humanize}}
+        {{end}}
+        </a>
       </li>
       {{end}}
     {{end}}
