@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{{with default "en-us" site.LanguageCode}}
+<html lang='{{.}}'>
+{{end}}
+{{block "head" .}}
+  {{partial "head.html" (dict "context" .)}}
+{{end}}
+  <body class='page'>
+    {{block "header" .}}
+    <div class='page__header'>
+      {{partialCached "header.html" (dict "context" .)}}
+      {{block "navbar" .}}
+        {{partial "navbar.html" (dict "navbarModifier" "navbar--menu" "context" .)}}
+      {{end}}
+    </div>
+    {{end}}
+
+    {{block "content" .}}
+    <div class='page__content'>
+      <section class='content'>
+      {{block "prologue" .}}{{end}}
+        {{block "article" .}}
+        <main class='content__article'>
+          {{partial "article.html" (dict "context" .)}}
+        </main>
+        {{end}}
+      {{block "epilogue" .}}{{end}}
+      </section>
+    </div>
+    {{end}}
+
+    {{block "footer" .}}
+    <div class='page__footer'>
+      {{partial "footer.html" (dict "isMenu" "true" "context" .)}}
+    </div>
+    {{end}}
+    {{block "page-footer" .}}
+    <div class='page__footer-opts'>
+      {{partial "footer.html" (dict "isMenu" "false" "context" .)}}
+    </div>
+    {{end}}
+	</body>
+</html>

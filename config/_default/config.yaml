@@ -27,7 +27,7 @@ menu:
     weight: 120
   - identifier: Feed
     name: RSS
-    pre: "/img/icons/rss.svg" 
+    pre: "/img/icons/feed.svg" 
     post: "Sígueme por RSS"
     url: "/index.xml"
     weight: 130
