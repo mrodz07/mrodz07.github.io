@@ -30,14 +30,14 @@
     {{end}}
 
     {{block "footer" .}}
-    <div class='page__footer'>
+      <div class='page__footer'>
       {{partial "footer.html" (dict "isMenu" "true" "context" .)}}
-    </div>
-    {{end}}
-    {{block "page-footer" .}}
-    <div class='page__footer-opts'>
-      {{partial "footer.html" (dict "isMenu" "false" "context" .)}}
-    </div>
+      {{block "page-footer" .}}
+        <div class='page__footer-opts'>
+        {{partial "footer.html" (dict "isMenu" "false" "context" .)}}
+        </div>
+      {{end}}
+      </div>
     {{end}}
 	</body>
 </html>

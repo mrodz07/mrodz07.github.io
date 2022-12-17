@@ -1,0 +1,26 @@
+.page {
+  --page--Spacer: var(--global--spacer--md);
+
+  margin: var(--page--Spacer);
+  padding: var(--page--Spacer);
+}
+
+.page__header {
+  font-family: var(--global--sans-serif--FontFamily);
+}
+
+.page__content {
+  --page--content--margin--Spacer: var(--global--spacer--md);
+  --page--content--padding--Spacer: var(--global--spacer--md);
+  --page--content--PageBackground: var(--global--light--PageBackground);
+
+  margin: var(--page--content--margin--Spacer);
+  padding: var(--page--content--padding--Spacer);
+
+  min-height: 100vh;
+  background-color: var(--page--content--PageBackground);
+}
+
+.page__footer {
+  text-align: center;
+}

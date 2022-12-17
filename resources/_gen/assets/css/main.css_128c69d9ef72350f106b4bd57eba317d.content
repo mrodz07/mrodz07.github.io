@@ -37,15 +37,76 @@
   font-style: normal;
   src: url("http://localhost:1313/webfonts/Quicksand-Bold.woff") format("woff"); }
 
+.page {
+  --page--Spacer: var(--global--spacer--md);
+  margin: var(--page--Spacer);
+  padding: var(--page--Spacer); }
+
+.page__header {
+  font-family: var(--global--sans-serif--FontFamily); }
+
+.page__content {
+  --page--content--margin--Spacer: var(--global--spacer--md);
+  --page--content--padding--Spacer: var(--global--spacer--md);
+  --page--content--PageBackground: var(--global--light--PageBackground);
+  margin: var(--page--content--margin--Spacer);
+  padding: var(--page--content--padding--Spacer);
+  min-height: 100vh;
+  background-color: var(--page--content--PageBackground); }
+
+.page__footer {
+  text-align: center; }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
+body {
+  --body--light--Background: var(--global--light--Background);
+  --body--light--FontColor: var(--global--light--FontColor);
+  background-color: var(--body--light--Background);
+  color: var(--body--light--FontColor); }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  --header--LineHeight: var(--global--main--LineHeight);
+  --header--Spacer: var(--global--spacer--sm);
+  line-height: var(--header--LineHeight);
+  margin-bottom: var(--header--Spacer);
+  font-weight: normal;
+  font-style: normal; }
+
+ul {
+  list-style-position: inside; }
+
+li::marker {
+  text-align: center; }
+
+p,
+ul,
+li,
+ol,
+code,
+figure {
+  --elements--Spacer: var(--global--spacer--md);
+  margin-bottom: var(--elements--Spacer); }
+
+p:last-child,
+ul:last-child,
+li:last-child,
+ol:last-child {
+  margin-bottom: 0; }
+
 :root {
   /* Font */
   --global--main--FontSize: 18px;
-  --global--sans-serif--FontFamily: 'QuickSand';
+  --global--main--LineHeight: 1.3rem;
+  --global--sans-serif--FontFamily: 'QuickSand', sans-serif;
   --global--monospace--FontFamily: none;
   /* Interface Colors */
   --global--primary--Color: #832383;
@@ -56,8 +117,8 @@
   --global--light--Background: #181929;
   --global--light--Foreground: #24263a;
   --global--light--BackgroundPattern: none;
-  --global--light--ArticleBackground: #dbdbd5;
-  --global--light--ArticleForeground: #f0f0f0;
+  --global--light--PageBackground: #dbdbd5;
+  --global--light--PageForeground: #f0f0f0;
   --global--light--BorderColor: #dbdbd5;
   --global--light--TitleColor: #9799b6;
   --global--light--FontColor: #5d6063;

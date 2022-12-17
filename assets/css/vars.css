@@ -1,7 +1,8 @@
 :root {
   /* Font */
   --global--main--FontSize: 18px;
-  --global--sans-serif--FontFamily: 'QuickSand';
+  --global--main--LineHeight: 1.3rem;
+  --global--sans-serif--FontFamily: 'QuickSand', sans-serif;
   --global--monospace--FontFamily: none;
 
   /* Interface Colors */
@@ -14,8 +15,8 @@
   --global--light--Background: #181929;
   --global--light--Foreground: #24263a;
   --global--light--BackgroundPattern: none;
-  --global--light--ArticleBackground: #dbdbd5;
-  --global--light--ArticleForeground: #f0f0f0;
+  --global--light--PageBackground: #dbdbd5;
+  --global--light--PageForeground: #f0f0f0;
   --global--light--BorderColor: #dbdbd5;
   --global--light--TitleColor: #9799b6;
   --global--light--FontColor: #5d6063;

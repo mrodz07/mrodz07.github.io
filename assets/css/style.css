@@ -3,3 +3,51 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  --body--light--Background: var(--global--light--Background);
+  --body--light--FontColor: var(--global--light--FontColor);
+
+  background-color: var(--body--light--Background);
+  color: var(--body--light--FontColor);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  --header--LineHeight: var(--global--main--LineHeight);
+  --header--Spacer: var(--global--spacer--sm);
+
+  line-height: var(--header--LineHeight);
+  margin-bottom: var(--header--Spacer);
+  font-weight: normal;
+  font-style: normal;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+li::marker {
+  text-align: center;
+}
+
+p,
+ul,
+li,
+ol,
+code,
+figure {
+  --elements--Spacer: var(--global--spacer--md);
+  margin-bottom: var(--elements--Spacer);
+}
+
+p:last-child,
+ul:last-child,
+li:last-child,
+ol:last-child {
+  margin-bottom: 0;
+}
