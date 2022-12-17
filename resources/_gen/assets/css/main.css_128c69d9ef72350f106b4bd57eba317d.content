@@ -1,6 +1,3 @@
-:root {
-  --font-name: 'OpenSans'; }
-
 @font-face {
   font-family: 'OpenSans';
   src: url("http://localhost:1313/webfonts/OpenSans-Light-webfont.woff") format("woff");
