@@ -1,0 +1,11 @@
+.navbar__item-list {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+.navbar__item {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}

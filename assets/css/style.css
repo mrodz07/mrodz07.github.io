@@ -51,3 +51,19 @@ li:last-child,
 ol:last-child {
   margin-bottom: 0;
 }
+
+a {  
+  --anchor--link--Color: var(--global--link--Color);
+  --anchor--link--TextDecoration: var(--global--link--TextDecoration);
+
+  color: var(--anchor--link--Color);
+  text-decoration: var(--anchor--link--TextDecoration);
+}
+
+a:hover {
+  --anchor--link--hover--Color: var(--global--link--hover--Color);
+  --anchor--link--hover--TextDecoration: var(--global--link--hover--TextDecoration);
+
+  color: var(--anchor--link--hover--Color);
+  text-decoration: var(--anchor--link--hover--TextDecoration);
+}

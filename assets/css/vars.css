@@ -25,7 +25,7 @@
   --global--link--Color: var(--global--primary--Color);
   --global--link--TextDecoration: none;
   --global--link--hover--Color: var(--global--warning--Color);
-  --global--link--hover--TextDecoration: var(--global--disabled--Color);
+  --global--link--hover--TextDecoration: underline;
 
   /* Spacers */
   --global--spacer--xss: 0.125rem;

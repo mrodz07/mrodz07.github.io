@@ -37,6 +37,21 @@
   font-style: normal;
   src: url("http://localhost:1313/webfonts/Quicksand-Bold.woff") format("woff"); }
 
+.header {
+  --header--TitleColor:var(--global--light--TitleColor);
+  color: var(--header--TitleColor);
+  text-align: center; }
+
+.navbar__item-list {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto; }
+
+.navbar__item {
+  display: flex;
+  justify-content: center;
+  list-style-type: none; }
+
 .page {
   --page--Spacer: var(--global--spacer--md);
   margin: var(--page--Spacer);
@@ -102,6 +117,18 @@ li:last-child,
 ol:last-child {
   margin-bottom: 0; }
 
+a {
+  --anchor--link--Color: var(--global--link--Color);
+  --anchor--link--TextDecoration: var(--global--link--TextDecoration);
+  color: var(--anchor--link--Color);
+  text-decoration: var(--anchor--link--TextDecoration); }
+
+a:hover {
+  --anchor--link--hover--Color: var(--global--link--hover--Color);
+  --anchor--link--hover--TextDecoration: var(--global--link--hover--TextDecoration);
+  color: var(--anchor--link--hover--Color);
+  text-decoration: var(--anchor--link--hover--TextDecoration); }
+
 :root {
   /* Font */
   --global--main--FontSize: 18px;
@@ -126,7 +153,7 @@ ol:last-child {
   --global--link--Color: var(--global--primary--Color);
   --global--link--TextDecoration: none;
   --global--link--hover--Color: var(--global--warning--Color);
-  --global--link--hover--TextDecoration: var(--global--disabled--Color);
+  --global--link--hover--TextDecoration: underline;
   /* Spacers */
   --global--spacer--xss: 0.125rem;
   --global--spacer--xs: 0.25rem;

@@ -1,0 +1,6 @@
+.header {
+  --header--TitleColor:var(--global--light--TitleColor);
+
+  color: var(--header--TitleColor);
+  text-align: center;
+}
