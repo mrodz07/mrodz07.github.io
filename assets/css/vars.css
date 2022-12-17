@@ -1,57 +1,15 @@
 :root {
-  --font-name: 'OpenSans'; }
-
-@font-face {
-  font-family: 'OpenSans';
-  src: url("http://localhost:1313/webfonts/OpenSans-Light-webfont.woff") format("woff");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: 'OpenSans';
-  src: url("http://localhost:1313/webfonts/OpenSans-Bold-webfont.woff") format("woff");
-  font-style: normal;
-  font-weight: bold; }
-
-@font-face {
-  font-family: 'OpenSans';
-  src: url("http://localhost:1313/webfonts/OpenSans-Italic-webfont.woff") format("woff");
-  font-style: italic;
-  font-weight: normal; }
-
-@font-face {
-  font-family: 'OpenSans';
-  src: url("http://localhost:1313/webfonts/OpenSans-BoldItalic-webfont.woff") format("woff");
-  font-style: italic;
-  font-weight: bold; }
-
-@font-face {
-  font-family: 'QuickSand';
-  font-weight: normal;
-  font-style: normal;
-  src: url("http://localhost:1313/webfonts/Quicksand-Light.woff") format("woff"); }
-
-@font-face {
-  font-family: 'QuickSand';
-  font-weight: bold;
-  font-style: normal;
-  src: url("http://localhost:1313/webfonts/Quicksand-Bold.woff") format("woff"); }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-:root {
   /* Font */
   --global--main--FontSize: 18px;
   --global--sans-serif--FontFamily: 'QuickSand';
   --global--monospace--FontFamily: none;
+
   /* Interface Colors */
   --global--primary--Color: #832383;
   --global--danger--Color: #e1373d;
   --global--warning--Color: #838323;
   --global--disabled--Color: #acb3b9;
+
   /* Theme */
   --global--light--Background: #181929;
   --global--light--Foreground: #24263a;
@@ -61,11 +19,13 @@
   --global--light--BorderColor: #dbdbd5;
   --global--light--TitleColor: #9799b6;
   --global--light--FontColor: #5d6063;
+
   /* Links */
   --global--link--Color: var(--global--primary--Color);
   --global--link--TextDecoration: none;
   --global--link--hover--Color: var(--global--warning--Color);
   --global--link--hover--TextDecoration: var(--global--disabled--Color);
+
   /* Spacers */
   --global--spacer--xss: 0.125rem;
   --global--spacer--xs: 0.25rem;
@@ -73,7 +33,9 @@
   --global--spacer--md: 1rem;
   --global--spacer--lg: 2rem;
   --global--spacer--xl: 3rem;
+
   /* Breakpoints */
   --global--breakpoint--sm: 30em;
   --global--breakpoint--md: 50em;
-  --global--breakpoint--lg: 70em; }
+  --global--breakpoint--lg: 70em;
+}
