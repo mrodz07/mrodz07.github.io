@@ -2,7 +2,8 @@
   /* Font */
   --global--main--FontSize: 18px;
   --global--main--LineHeight: 1.3rem;
-  --global--sans-serif--FontFamily: 'QuickSand', sans-serif;
+  --global--main--HeaderFontFamily: 'QuickSand', sans-serif;
+  --global--sans-serif--FontFamily: 'OpenSans', sans-serif;
   --global--monospace--FontFamily: none;
 
   /* Interface Colors */

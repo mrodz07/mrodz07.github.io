@@ -1,12 +1,15 @@
 .page {
   --page--Spacer: var(--global--spacer--md);
+  --page--FontFamily: var(--global--sans-serif--FontFamily);
 
   margin: var(--page--Spacer);
   padding: var(--page--Spacer);
+  font-family: var(--page--FontFamily);
 }
 
 .page__header {
-  font-family: var(--global--sans-serif--FontFamily);
+  --page--header--FontFamily: var(--global--main--HeaderFontFamily);
+  font-family: var(--page--header--FontFamily);
 }
 
 .page__content {

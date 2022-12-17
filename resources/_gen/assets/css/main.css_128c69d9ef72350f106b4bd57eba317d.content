@@ -51,11 +51,14 @@
 
 .page {
   --page--Spacer: var(--global--spacer--md);
+  --page--FontFamily: var(--global--sans-serif--FontFamily);
   margin: var(--page--Spacer);
-  padding: var(--page--Spacer); }
+  padding: var(--page--Spacer);
+  font-family: var(--page--FontFamily); }
 
 .page__header {
-  font-family: var(--global--sans-serif--FontFamily); }
+  --page--header--FontFamily: var(--global--main--HeaderFontFamily);
+  font-family: var(--page--header--FontFamily); }
 
 .page__content {
   --page--content--margin--Spacer: var(--global--spacer--md);
@@ -130,7 +133,8 @@ a:hover {
   /* Font */
   --global--main--FontSize: 18px;
   --global--main--LineHeight: 1.3rem;
-  --global--sans-serif--FontFamily: 'QuickSand', sans-serif;
+  --global--main--HeaderFontFamily: 'QuickSand', sans-serif;
+  --global--sans-serif--FontFamily: 'OpenSans', sans-serif;
   --global--monospace--FontFamily: none;
   /* Interface Colors */
   --global--primary--Color: #832383;
