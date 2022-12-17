@@ -1,0 +1,15 @@
+{{$summarySize := 200}}
+<li class='grid__item'>
+  <a href='{{.Permalink}}'>
+    <time class='grid__time' datetime='{{.Date.Format "2006-01-02"}}'>{{.Date.Format "02-01-2006"}}</time>
+    <h4 class='grid__title'>{{.Title}}</h4>
+    <article class='grid__desc'>
+      {{if (gt (len .Summary) $summarySize)}}
+        {{slicestr .Summary 0 (sub $summarySize 1) | markdownify}}...
+      {{else}}
+        {{.Summary}}
+      {{end}}
+    </article>
+    <div class='grid_button-more'>Leer más</div>
+  </a>
+</li>

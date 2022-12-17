@@ -42,11 +42,13 @@
   {{with site.RegularPages.Related .context}}
   <aside class='article__related'>
     <h2>Páginas relacionadas</h2>
-    <ul class='article__related-pages'>
+    <div class='article__related-pages'>
+      <ul class='grid grid--related'>
       {{range first 3 .}}
-        {{partialCached "card.html" . .Permalink}} 
+        {{partialCached "gridItem.html" . .Permalink}} 
       {{end}}
-    </ul>
+      </ul>
+    </div>
   </aside>
   {{end}}
 </article>

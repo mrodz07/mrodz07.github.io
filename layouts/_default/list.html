@@ -1,21 +1,11 @@
-{{define "head"}}
-  {{if (not (eq .Title (.Type | humanize)))}}
-    {{partial "head.html" (dict "Title" (.Title | printf "%s %s" (.Type | singularize) | humanize))}}
-  {{else}}
-    {{partial "head.html" (dict "Title" .Title)}}
-  {{end}}
-{{end}}
-{{define "body"}}
+{{define "article"}}
   {{.Content}}
+{{end}}
+{{define "epilogue"}}
   {{with .Paginator.Pages}}
-  <ul class="list posts">
-    {{if (not (eq $.Title ($.Type | humanize)))}}
-      <h2>{{$.Title | printf "%s %s" ($.Type | singularize) | humanize}}</h2>
-    {{else}}
-      <h2>{{$.Title | humanize}}</h2>
-    {{end}}
+  <ul class='grid{{if eq $.Type "blog"}} grid--blog{{end}}'>
     {{range .ByDate.Reverse}}
-      {{partialCached "card.html" . .Permalink}}
+      {{partial "gridItem.html" . .Permalink}}
     {{end}}
   </ul>
   {{end}}
