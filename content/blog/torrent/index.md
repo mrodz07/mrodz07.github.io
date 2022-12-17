@@ -28,11 +28,11 @@ Los miembros del swarm pueden tener uno de dos roles: pueden ser "leeches" que d
 
 Para comenzar a usar el protocolo lo primero que debemos hacer es descargar un cliente de torrent, este es un programa que nos ayudará a comunicarnos por medio del protocolo y gestionará los archivos descargados. Recomiendo usar [Transmission](https://transmissionbt.com/), disponible para Linux, Windows y Mac. Lo considero el mejor por su licencia, simpleza y compatibilidad, aunque puedes usar cualquier otro cliente como [Deluge](https://deluge-torrent.org/) o [Qbittorrent](https://www.qbittorrent.org/).
 
-{{<figure src="transmission_mac.png" title="Transmission ejecutandose en MacOS" alt="Cliente transmission en una Mac">}}
+{{<figure src="./img/transmission_mac.png" title="Transmission ejecutandose en MacOS" alt="Cliente transmission en una Mac">}}
 
 El siguiente paso es conectarnos a un swarm donde se encuentren compartiendo el archivo que queremos. Para establecer conexión con el swarm tenemos que descargar un archivo con terminación .torrent, este contendrá información para consultar a un tracker (o miembro del swarm) y unirnos al swarm, también podemos usar un magnet link que cumplira con la misma función. Para comenzar a descargar necesitamos abrir el archivo .torrent con nuestro cliente o ingresar el magnet link en este. Hay varias maneras de encontrar archivos .torrent o magnet links, yo recomiendo el buscador de [Snowfl](https://snowfl.com/) para hallarlos.
 
-{{<figure src="add_torrent_file.gif" title="Usando .torrent" alt="Añadiendo torrent por medio de un archivo .torrent al cliente">}}
+{{<figure src="./img/add_torrent_file.gif" title="Usando .torrent" alt="Añadiendo torrent por medio de un archivo .torrent al cliente">}}
 
 ### Precauciones
 
@@ -40,6 +40,6 @@ El siguiente paso es conectarnos a un swarm donde se encuentren compartiendo el 
 - La naturaleza de este protocolo hace pública tu [direccion IP](https://es.wikipedia.org/wiki/Direcci%C3%B3n_IP) a todos los miembros del swarm, si quieres que esta sea privada a ellos usa una [VPN](https://es.wikipedia.org/wiki/Red_privada_virtual) o un [proxy](https://es.wikipedia.org/wiki/Servidor_proxy) al usar torrent (una VPN puede usarse para evitar las leyes de copyright de tu país, pero ese es otro tema).
 - Procura verificar la terminación y el contenido de los torrents que estés descargando, si sospechas de un torrent no lo descargues.
 
-{{<figure src="inspect_torrent.gif" title="Inspeccionando los contenidos de un torrent en transmision" alt="Siempre revisa los contenidos de los torrents antes de descargarlos">}}
+{{<figure src="./img/inspect_torrent.gif" title="Inspeccionando los contenidos de un torrent en transmision" alt="Siempre revisa los contenidos de los torrents antes de descargarlos">}}
 
 Eso sería todo, ahora sabes lo necesario para comenzar a usar torrent. Diviértete torrenteando y no olvides permanecer en el swarm como seed, es muy importante.
