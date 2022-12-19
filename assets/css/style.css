@@ -12,58 +12,10 @@ body {
   color: var(--body--light--FontColor);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  --header--LineHeight: var(--global--main--LineHeight);
-  --header--Spacer: var(--global--spacer--sm);
-
-  line-height: var(--header--LineHeight);
-  margin-bottom: var(--header--Spacer);
-  font-weight: normal;
-  font-style: normal;
-}
-
 ul {
   list-style-position: inside;
 }
 
 li::marker {
   text-align: center;
-}
-
-p,
-ul,
-li,
-ol,
-code,
-figure {
-  --elements--Spacer: var(--global--spacer--md);
-  margin-bottom: var(--elements--Spacer);
-}
-
-p:last-child,
-ul:last-child,
-li:last-child,
-ol:last-child {
-  margin-bottom: 0;
-}
-
-a {  
-  --anchor--link--Color: var(--global--link--Color);
-  --anchor--link--TextDecoration: var(--global--link--TextDecoration);
-
-  color: var(--anchor--link--Color);
-  text-decoration: var(--anchor--link--TextDecoration);
-}
-
-a:hover {
-  --anchor--link--hover--Color: var(--global--link--hover--Color);
-  --anchor--link--hover--TextDecoration: var(--global--link--hover--TextDecoration);
-
-  color: var(--anchor--link--hover--Color);
-  text-decoration: var(--anchor--link--hover--TextDecoration);
 }

@@ -4,3 +4,9 @@
   color: var(--header--TitleColor);
   text-align: center;
 }
+
+.header__title,
+.header__subtitle {
+  font-weight: normal;
+  font-style: normal;
+}
