@@ -1,0 +1,88 @@
+.page {
+  --page--margin--Spacer: var(--global--spacer--md);
+  --page--padding--Spacer: var(--global--spacer--md);
+  --page--FontFamily: var(--global--sans-serif--FontFamily);
+
+  --page--margin--Spacer: 0;
+
+  height: 100vh;
+  margin: var(--page--margin--Spacer);
+  padding: var(--page--padding--Spacer);
+  font-family: var(--page--FontFamily);
+}
+
+.page__header {
+  --page--header--FontFamily: var(--global--main--HeaderFontFamily);
+  font-family: var(--page--header--FontFamily);
+}
+
+.page__content {
+  --page--content--margin--Spacer: var(--global--spacer--md);
+  --page--content--padding--Spacer: var(--global--spacer--md);
+  --page--content--PageBackground: var(--global--light--PageBackground);
+
+  --page--content--margin--Spacer: 0;
+  --page--content--padding--Spacer: 0 var(--global--spacer--md);
+
+  margin: var(--page--content--margin--Spacer);
+  padding: var(--page--content--padding--Spacer);
+
+  background-color: var(--page--content--PageBackground);
+}
+
+.page__footer {
+  --page--footer--TextColor: var(--global--light--TitleColor);
+
+  color: var(--page--footer--TextColor);
+  text-align: center;
+}
+
+.page__footer-opts {
+  font-size: small;
+}
+
+.page__content h1,
+.page__content h2,
+.page__content h3,
+.page__content h4,
+.page__content h5,
+.page__content h6 {
+  --header--LineHeight: var(--global--main--LineHeight);
+  --header--Spacer: var(--global--spacer--sm);
+
+  line-height: var(--header--LineHeight);
+  margin-bottom: var(--header--Spacer);
+}
+
+.page__content p,
+.page__content ul,
+.page__content li,
+.page__content ol,
+.page__content code,
+.page__content figure {
+  --elements--Spacer: var(--global--spacer--md);
+  margin-bottom: var(--elements--Spacer);
+}
+
+.page__content p:last-child,
+.page__content ul:last-child,
+.page__content li:last-child,
+.page__content ol:last-child {
+  margin-bottom: 0;
+}
+
+.page__content a {  
+  --anchor--link--Color: var(--global--link--Color);
+  --anchor--link--TextDecoration: var(--global--link--TextDecoration);
+
+  color: var(--anchor--link--Color);
+  text-decoration: var(--anchor--link--TextDecoration);
+}
+
+.page__content a:hover {
+  --anchor--link--hover--Color: var(--global--link--hover--Color);
+  --anchor--link--hover--TextDecoration: var(--global--link--hover--TextDecoration);
+
+  color: var(--anchor--link--hover--Color);
+  text-decoration: var(--anchor--link--hover--TextDecoration);
+}

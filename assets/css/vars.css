@@ -1,0 +1,44 @@
+:root {
+  /* Font */
+  --global--main--FontSize: 18px;
+  --global--main--LineHeight: 1.3rem;
+  --global--main--HeaderFontFamily: 'QuickSand', sans-serif;
+  --global--sans-serif--FontFamily: 'OpenSans', sans-serif;
+  --global--monospace--FontFamily: none;
+
+  /* Interface Colors */
+  --global--primary--Color: #832383;
+  --global--danger--Color: #e1373d;
+  --global--warning--Color: #838323;
+  --global--disabled--Color: #acb3b9;
+
+  /* Theme */
+  --global--light--Background: #181929;
+  --global--light--Foreground: #24263a;
+  --global--light--BackgroundPattern: none;
+  --global--light--PageBackground: #dbdbd5;
+  --global--light--PageForeground: #f0f0f0;
+  --global--light--TitleColor: #9799b6;
+  --global--light--BorderColor: var(--global--light--TitleColor);
+  --global--light--FontColor: #5d6063;
+  --global--light--BorderStyle: 0.3em solid var(--global--light--BorderColor);
+
+  /* Links */
+  --global--link--Color: var(--global--primary--Color);
+  --global--link--TextDecoration: none;
+  --global--link--hover--Color: var(--global--warning--Color);
+  --global--link--hover--TextDecoration: underline;
+
+  /* Spacers */
+  --global--spacer--xss: 0.125rem;
+  --global--spacer--xs: 0.25rem;
+  --global--spacer--sm: 0.5rem;
+  --global--spacer--md: 1rem;
+  --global--spacer--lg: 2rem;
+  --global--spacer--xl: 3rem;
+
+  /* Breakpoints */
+  --global--breakpoint--sm: 30em;
+  --global--breakpoint--md: 50em;
+  --global--breakpoint--lg: 70em;
+}

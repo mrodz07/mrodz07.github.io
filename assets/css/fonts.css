@@ -1,7 +1,3 @@
-:root {
-  --font-name: 'OpenSans';
-}
-
 @font-face {
   font-family: 'OpenSans';
   src: url('{{(resources.Get "/webfonts/OpenSans-Light-webfont.woff").Permalink}}') format('woff');

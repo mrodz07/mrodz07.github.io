@@ -1,15 +1,15 @@
 {{$supportPage:= (relref . "apoyo.md")}}
 {{$monthMap:= site.Data.months_map}}
 <ul class='navbar__item-list'>
-  <li>
+  <li class='navbar__item'>
     <time datetime='{{site.LastChange.Format "2006-01-02"}}'>{{site.LastChange.Format "02"}} {{index $monthMap (site.LastChange.Format "1")}} {{site.LastChange.Format "2006"}}</time>
   </li>
   {{with $supportPage}}
-  <li>
-    <a href="{{.}}">Apoya la página</a>
+  <li class='navbar__item'>
+    <a class='navbar__anchor' href='{{.}}'>Apoya la página</a>
   </li>
   {{end}}
   {{with site.Copyright}}
-  <li>{{ . | markdownify}}</li>
+  <li class='navbar__item'>{{ . | markdownify}}</li>
   {{end}}
 </ul>
