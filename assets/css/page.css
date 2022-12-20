@@ -21,16 +21,23 @@
   --page--content--PageBackground: var(--global--light--PageBackground);
 
   --page--content--margin--Spacer: 0;
+  --page--content--padding--Spacer: 0 var(--global--spacer--md);
 
   margin: var(--page--content--margin--Spacer);
   padding: var(--page--content--padding--Spacer);
 
-  min-height: 100vh;
   background-color: var(--page--content--PageBackground);
 }
 
 .page__footer {
+  --page--footer--TextColor: var(--global--light--TitleColor);
+
+  color: var(--page--footer--TextColor);
   text-align: center;
+}
+
+.page__footer-opts {
+  font-size: small;
 }
 
 .page__content h1,

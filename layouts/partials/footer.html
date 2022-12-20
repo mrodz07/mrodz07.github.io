@@ -1,7 +1,7 @@
 <footer class='footer'>
   <div class='footer__navbar'>
   {{if (eq .isMenu "true")}}
-    {{partial "navbar.html" (dict "navbarModifier" "navbar--menu" "siteMenu" site.Menus.footer "context" .)}}
+    {{partial "navbar.html" (dict "navbarModifier" "navbar--footer" "siteMenu" site.Menus.footer "context" .)}}
   {{else}}
     {{partial "footerOpts.html" .context}}
   {{end}}

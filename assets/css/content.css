@@ -1,0 +1,11 @@
+.content {
+  --content--BackgroundColor: var(--global--light--PageForeground);
+  --content--margin--Spacer: var(--global--spacer--sm);
+  --content--padding--Spacer: var(--global--spacer--md);
+
+  --content--margin--Spacer: 0;
+
+  margin: var(--content--margin--Spacer);
+  padding: var(--content--padding--Spacer);
+  background-color: var(--content--BackgroundColor);
+}
