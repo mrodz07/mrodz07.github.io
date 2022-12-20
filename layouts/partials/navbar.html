@@ -5,7 +5,9 @@
       <li class='navbar__item{{if (eq .Name $.context.Title)}} navbar__item--selected{{end}}'>
         <a class='navbar__anchor' href='{{.URL | safeURL}}'>
         {{if .Pre}}
-          <img class='navbar__image' alt='{{with .Post}}{{.}}{{end}}' src='{{(resources.GetMatch .Pre).Permalink}}' title='Logo de {{.Name | humanize}}'/>
+        <div class='navbar__svg'>
+          {{printf "%s" (resources.GetMatch .Pre) | printf "%s%s" "assets/" | readFile | safeHTML}}
+        </div>
         {{else}}
           {{.Name | humanize}}
         {{end}}
