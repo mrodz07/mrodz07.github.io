@@ -17,7 +17,7 @@
 
     {{block "content" .}}
     <div class='page__content'>
-      <section class='content'>
+      <section class='content {{block "contentModifier" .}}{{end}}'>
       {{block "prologue" .}}{{end}}
         {{block "article" .}}
         <main class='content__article'>
