@@ -9,3 +9,13 @@
   padding: var(--content--padding--Spacer);
   background-color: var(--content--BackgroundColor);
 }
+
+.content--main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.content--main .content__article {
+  padding: var(--content--padding--Spacer);
+}

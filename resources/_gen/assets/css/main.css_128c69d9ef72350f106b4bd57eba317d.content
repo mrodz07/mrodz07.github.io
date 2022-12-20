@@ -7,6 +7,14 @@
   padding: var(--content--padding--Spacer);
   background-color: var(--content--BackgroundColor); }
 
+.content--main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.content--main .content__article {
+  padding: var(--content--padding--Spacer); }
+
 @font-face {
   font-family: 'OpenSans';
   src: url("http://localhost:1313/webfonts/OpenSans-Light-webfont.woff") format("woff");
@@ -52,6 +60,9 @@
 .header__subtitle {
   font-weight: normal;
   font-style: normal; }
+
+.image-frame__image {
+  width: 100%; }
 
 .navbar {
   --navbar--margin--Spacer: var(--global--spacer--sm);
