@@ -1,18 +1,8 @@
-{{define "mainClass"}}index page{{end}}
-{{define "body"}}
-  {{$image := resources.Get "img/foto_personal_sm.jpg"}}
-  <div class='main-box'> 
-    <div class='main-desc'>
-      {{.Content}}
-    </div>
-    {{with $image}}
-    <div class='main-image-container'>
-      <img id='main-image' src='{{.Permalink}}' title='Una foto mia' alt='Yo desde un plano medio'>
-    <div>
-    {{end}}
-  <!--
-    <div class='main-links'>
-    </div>
-  -->
-  </div>
+{{define "epilogue"}}
+{{$image := resources.Get "img/shared/foto_personal_sm.jpg"}}
+  {{with $image}}
+  <div class='image-frame'>
+    <img class='image-frame__image' src='{{.Permalink}}' title='Una foto mia' alt='Una foto mia'>
+  <div>
+  {{end}}
 {{end}}
