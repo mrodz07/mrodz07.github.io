@@ -110,6 +110,7 @@
   --page--padding--Spacer: var(--global--spacer--md);
   --page--FontFamily: var(--global--sans-serif--FontFamily);
   --page--margin--Spacer: 0;
+  height: 100vh;
   margin: var(--page--margin--Spacer);
   padding: var(--page--padding--Spacer);
   font-family: var(--page--FontFamily); }
@@ -209,9 +210,10 @@ li::marker {
   --global--light--BackgroundPattern: none;
   --global--light--PageBackground: #dbdbd5;
   --global--light--PageForeground: #f0f0f0;
-  --global--light--BorderColor: #dbdbd5;
   --global--light--TitleColor: #9799b6;
+  --global--light--BorderColor: var(--global--light--TitleColor);
   --global--light--FontColor: #5d6063;
+  --global--light--BorderStyle: 0.3em solid var(--global--light--BorderColor);
   /* Links */
   --global--link--Color: var(--global--primary--Color);
   --global--link--TextDecoration: none;
