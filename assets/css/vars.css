@@ -7,16 +7,16 @@
   --global--monospace--FontFamily: none;
 
   /* Interface Colors */
-  --global--primary--Color: #832383;
+  --global--primary--Color: #838323;
   --global--danger--Color: #e1373d;
-  --global--warning--Color: #838323;
+  --global--warning--Color: #832383;
   --global--disabled--Color: #acb3b9;
 
   /* Theme */
   --global--light--Background: #181929;
   --global--light--Foreground: #24263a;
   --global--light--PageBackground: #dbdbd5;
-  --global--light--BackgroundPattern: url('data:image/svg+xml;charset=utf-8,{{printf "%s" (resources.Get "/img/icons/circuit-board.svg") | printf "%s%s" "/assets/" | readFile | safeHTML | urlquery}}');
+  /*--global--light--BackgroundPattern: url('data:image/svg+xml;charset=utf-8,{{printf "%s" (resources.Get "/img/icons/circuit-board.svg") | printf "%s%s" "/assets/" | readFile | safeHTML | urlquery}}');*/
   --global--light--PageForeground: #f0f0f0;
   --global--light--TitleColor: #9799b6;
   --global--light--BorderColor: var(--global--light--TitleColor);

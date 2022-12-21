@@ -29,10 +29,11 @@
 }
 
 .navbar__anchor {
-  --navbar--anchor--link--Color: var(--global--primary--Color);
+  --navbar--anchor--link--Color: var(--global--link--Color);
   --navbar--anchor--link--TextDecoration: var(--global--link--TextDecoration);
 
   color: var(--navbar--anchor--link--Color);
+  font-weight: bold;
   text-decoration: var(--navbar--anchor--link--TextDecoration);
 }
 
