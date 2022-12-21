@@ -2,7 +2,7 @@
 {{$monthMap:= site.Data.months_map}}
 <ul class='navbar__item-list'>
   <li class='navbar__item'>
-    <time datetime='{{site.LastChange.Format "2006-01-02"}}'>{{site.LastChange.Format "02"}} {{index $monthMap (site.LastChange.Format "1")}} {{site.LastChange.Format "2006"}}</time>
+    <time datetime='{{site.LastChange.Format "2006-01-02"}}'>{{site.LastChange.Format "02-01-2006"}}</time>
   </li>
   {{with $supportPage}}
   <li class='navbar__item'>
