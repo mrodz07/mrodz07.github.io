@@ -8,7 +8,7 @@ body {
   --body--light--Background: var(--global--light--Background);
   --body--light--FontColor: var(--global--light--FontColor);
 
-  background-color: var(--body--light--Background);
+  /*background-color: var(--body--light--Background);*/
   color: var(--body--light--FontColor);
 }
 
