@@ -12,13 +12,13 @@
 {{end}}
 
 <article class='article {{$styleScratch.Get "articleType"}}'>
-  <header {{if not ($styleScratch.Get "articleType")}}style='display: none;'{{end}}> 
+  <header {{if not ($styleScratch.Get "articleType")}}style='display: none;'{{else}}class='article__header'{{end}}> 
     <h1 class='article__title'>{{.context.Title}}</h1>
-    <section class='article__time'>
-      {{with .context.Date}}
-      <time class='pub-time' datetime='{{.Format "2006-01-02"}}'>Publicado el {{.Format "02-01-2006"}}. {{if not (eq . $.context.Lastmod)}}Actualizado el {{$.context.Lastmod.Format "02-01-2006"}}{{end}}</time>
-      {{end}}
+    {{with .context.Date}}
+    <section>
+      <time class='article__time' datetime='{{.Format "2006-01-02"}}'>Publicado el {{.Format "02-01-2006"}}. {{if not (eq . $.context.Lastmod)}}Actualizado el {{$.context.Lastmod.Format "02-01-2006"}}{{end}}</time>
     </section>
+    {{end}}
     {{with .context.Params.tags}}
     <section class='article__tags'>
       {{range .}}
@@ -41,7 +41,7 @@
 
   {{with site.RegularPages.Related .context}}
   <aside class='article__related'>
-    <h2>Páginas relacionadas</h2>
+    <h3>Páginas relacionadas</h3>
     <div class='article__related-pages'>
       <ul class='grid grid--related'>
       {{range first 3 .}}

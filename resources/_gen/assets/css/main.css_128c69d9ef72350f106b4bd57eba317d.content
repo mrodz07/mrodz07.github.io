@@ -1,3 +1,22 @@
+.article__content {
+  --article--content--MarginBottomSpacer: var(--global--spacer--md);
+  margin-bottom: var(--article--content--MarginBottomSpacer); }
+
+/*Odio important odio important*/
+.article__title {
+  margin: 0 !important; }
+
+.article__header {
+  --article--header--MarginBottomSpacer: var(--global--spacer--md);
+  margin-bottom: var(--article--header--MarginBottomSpacer); }
+
+.article__time {
+  font-size: small; }
+
+.article__tags {
+  --article--tags--MarginVerticalSpacer: var(--global--spacer--sm);
+  margin: var(--article--tags--MarginVerticalSpacer) 0; }
+
 .content {
   --content--BackgroundColor: var(--global--light--PageForeground);
   --content--margin--Spacer: var(--global--spacer--sm);
