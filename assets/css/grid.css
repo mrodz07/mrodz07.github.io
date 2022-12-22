@@ -1,0 +1,67 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  
+  justify-content: flex-start;
+}
+
+.grid__title--main {
+  --grid--title--main--BorderStyle: var(--global--light--BorderStyle);
+  --grid--title--main--Margin: var(--global--spacer--md);
+
+  /* odio important odio important */
+  margin-bottom: var(--grid--title--main--Margin) !important;
+  border-bottom: var(--grid--title--main--BorderStyle);
+}
+
+.grid__item {
+  --grid--item--Padding: var(--global--spacer--sm);
+  --grid--item--Margin: var(--global--spacer--xs);
+  --grid--item--BorderStyle: var(--global--light--BorderStyle);
+
+  width: 100%;
+
+  list-style-type: none;
+  border: var(--grid--item--BorderStyle);
+  padding: var(--grid--item--Padding);
+  line-height: var(--global--main--LineHeight);
+}
+
+.grid__links {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid__time {
+  --grid--time--Margin: var(--global--spacer--sm);
+
+  display: block;
+  margin-bottom: var(--grid--time--Margin);
+}
+
+.grid__desc {
+  --grid--desc--Margin: var(--global--spacer--sm);
+  --grid--desc--Color: var(--global--light--FontColor);
+
+  display: block;
+  color: var(--grid--desc--Color);
+  margin-bottom: var(--grid--desc--Margin);
+}
+
+/* Using --global--breakpoint--md */
+@media only screen and (min-width: 50em) {
+
+  .grid__item {
+    width: 48%;
+    margin: 0 1%;
+  }
+}
+
+/* Using --global--breakpoint--lg */
+@media only screen and (min-width: 70em) {
+
+  .grid__item {
+    width: 32%;
+    margin: 0 0.66%
+  }
+}

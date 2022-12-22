@@ -1,6 +1,9 @@
 {{define "article"}}
   {{.Content}}
 {{end}}
+{{define "prologue"}}
+<h2 class='grid__title grid__title--main'>{{.Title}}</h2>
+{{end}}
 {{define "epilogue"}}
   {{with .Paginator.Pages}}
   <ul class='grid{{if eq $.Type "blog"}} grid--blog{{end}}'>

@@ -5,10 +5,13 @@
 }
 
 body {
+  --body--FontSize: var(--global--main--FontSize);
   --body--light--Background: var(--global--light--Background);
   --body--light--FontColor: var(--global--light--FontColor);
 
   /*background-color: var(--body--light--Background);*/
+
+  font-size: var(--body--FontSize);
   color: var(--body--light--FontColor);
 }
 

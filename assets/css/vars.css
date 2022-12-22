@@ -19,9 +19,9 @@
   /*--global--light--BackgroundPattern: url('data:image/svg+xml;charset=utf-8,{{printf "%s" (resources.Get "/img/icons/circuit-board.svg") | printf "%s%s" "/assets/" | readFile | safeHTML | urlquery}}');*/
   --global--light--PageForeground: #f0f0f0;
   --global--light--TitleColor: #9799b6;
-  --global--light--BorderColor: var(--global--light--TitleColor);
+  --global--light--BorderColor: #d6d9dc;
   --global--light--FontColor: #5d6063;
-  --global--light--BorderStyle: 0.3em solid var(--global--light--BorderColor);
+  --global--light--BorderStyle: 1px solid var(--global--light--BorderColor);
 
   /* Links */
   --global--link--Color: var(--global--primary--Color);
