@@ -83,6 +83,7 @@
   border-bottom: var(--grid--title--main--BorderStyle); }
 
 .grid__item {
+  align-self: stretch;
   --grid--item--Padding: var(--global--spacer--sm);
   --grid--item--Margin: var(--global--spacer--xs);
   --grid--item--BorderStyle: var(--global--light--BorderStyle);
@@ -91,6 +92,10 @@
   border: var(--grid--item--BorderStyle);
   padding: var(--grid--item--Padding);
   line-height: var(--global--main--LineHeight); }
+
+/* Odio important, odio important */
+.grid__item:last-child {
+  margin-bottom: var(--global--spacer--md) !important; }
 
 .grid__links {
   display: flex;
