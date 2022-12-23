@@ -167,6 +167,10 @@
   height: 1.2em;
   color: var(--navbar--image--SVGColor); }
 
+.navbar__svg:hover {
+  --navbar--svg--HoverColor: var(--global--link--Color);
+  color: var(--navbar--svg--HoverColor); }
+
 .navbar__anchor {
   --navbar--anchor--link--Color: var(--global--link--Color);
   --navbar--anchor--link--TextDecoration: var(--global--link--TextDecoration);
