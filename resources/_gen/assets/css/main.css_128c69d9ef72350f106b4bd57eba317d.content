@@ -1,10 +1,15 @@
 .article__content {
-  --article--content--MarginBottomSpacer: var(--global--spacer--md);
+  --article--content--MarginBottomSpacer: var(--global--spacer--xl);
   margin-bottom: var(--article--content--MarginBottomSpacer); }
 
 /*Odio important odio important*/
 .article__title {
   margin: 0 !important; }
+
+.article__tags-title {
+  --article--tags-title--MarginRightSpacer: var(--global--spacer--xs);
+  display: inline;
+  margin-right: var(--article--tags-title--MarginRightSpacer); }
 
 .article__header {
   --article--header--MarginBottomSpacer: var(--global--spacer--md);

@@ -16,11 +16,12 @@
     <h1 class='article__title'>{{.context.Title}}</h1>
     {{with .context.Date}}
     <section>
-      <time class='article__time' datetime='{{.Format "2006-01-02"}}'>Publicado el {{.Format "02-01-2006"}}. {{if not (eq . $.context.Lastmod)}}Actualizado el {{$.context.Lastmod.Format "02-01-2006"}}{{end}}</time>
+      <time class='article__time' datetime='{{.Format "2006-01-02"}}'>Publicado el {{.Format "02-01-2006"}}. {{if not (eq . $.context.Lastmod)}}Actualizado por última vez el {{$.context.Lastmod.Format "02-01-2006"}}{{end}}</time>
     </section>
     {{end}}
     {{with .context.Params.tags}}
     <section class='article__tags'>
+      <p class='article__tags-title'>Etiquetas:</p>
       {{range .}}
       <a class='article__tag' href='{{"/tags/" | relLangURL}}{{- . | urlize}}'>#{{. | humanize}}</a>
       {{end}}
