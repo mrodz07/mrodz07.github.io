@@ -1,5 +1,9 @@
 .image-frame {
   --image-frame--ImageWidth: var(--global--breakpoint--sm);
+  --image-frame--MarginSpacer: var(--global--spacer--md);
+
+  /* Odio important, odio important */
+  margin-bottom: var(--image-frame--MarginSpacer) !important;
 
   max-width: 50%;
   margin: auto;

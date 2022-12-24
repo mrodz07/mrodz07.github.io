@@ -34,6 +34,6 @@ Después de haber instalado el lector solo se requiere agregar los feeds remotos
 - Para obtener feeds de sitios tipo blog podemos intentar escribir en la URL base del blog "/rss" o buscar el símbolo de RSS en la página y copiar el link que nos da.
 - Para páginas como youtube y twitter puedes usar "clientes alternos" para obtener feeds, como [Invidious](https://github.com/iv-org/invidious) y [Nitter](https://github.com/zedeus/nitter), aunque en el caso de youtube hay un [método oficial](https://www.crstin.com/es/youtube-rss/) para hacerlo desde la página original.
 
-{{<figure src="./img/icono_rss.svg" title="El logo de RSS" alt="Logotipo del protocolo">}}
+{{<img src="img/icono_rss" title="El logo de RSS" alt="Logotipo del protocolo">}}
 
 Ahora que sabes como usar RSS utilízalo para consumir contenido por internet y asegúrate de contárselo a tus amigos sobre el formato. Si aún no sabes a quien seguir agrega mi feed.

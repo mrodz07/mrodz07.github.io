@@ -28,7 +28,7 @@ Es claro que no se pueden tener todas estas propiedades en una misma aplicación
 
 ### Chrome y Chromium
 
-{{<figure src="./img/chromium_logo.png" title="Logo de Chromium" alt="Logotipo de chromium junto con el de chrome">}}
+{{<img src="img/chromium_logo" title="Logo de Chromium" desc="Logotipo de chromium junto con el de chrome">}}
 
 Comienzo con el navegador más famoso de la actualidad: Chrome. Lanzado en 2008 se hizo popular para mediados de la década pasada por ser un navegador desarrollado e impulsado por Google. Lamentablemente sus usuarios no cuentan con [privacidad](https://spyware.neocities.org/articles/chrome_es.html) y por lo mismo no lo he usado desde hace mucho tiempo. Debido a esto me concentraré en su base: Chromium, que es el mismo navegador, solo que más privado y sin ciertos componentes de la empresa desarrolladora, aunque si quieres máxima privacidad recomiendo [Ungoogled-Chromium](https://github.com/ungoogled-software/ungoogled-chromium) que es el mismo, pero sin ninguna dependencia a servicios de Google.
 
@@ -46,7 +46,7 @@ Chromium no es un mal navegador: es seguro, personalizable, fácil de usar y rá
 
 ### Brave
 
-{{<figure src="./img/brave_logo.webp" title="Logo de Brave" alt="Logotipo de brave">}}
+{{<img src="img/brave_logo" title="Logo de Brave">}}
 
 Brave es un navegador relativamente nuevo (lanzado en 2016), basado en Chrome, que se promociona como una alternativa a éste. Su principal enfoque es la privacidad, según la mercadotecnia, pero en práctica no nos proporciona tanta como otros navegadores (o mejor dicho extensiones de otros navegadores). Ya se ha hablado muchos sobre estos [aspectos](https://spyware.neocities.org/articles/brave.html) de Brave, por lo que no redundare en esto.
 
@@ -66,7 +66,7 @@ En resumen, creo que Brave es el mejor navegador que puedes usar sin necesidad d
 
 ### Vivaldi
 
-{{<figure src="./img/vivaldi_logo.webp" title="Logo de Vivaldi" alt="Logotipo de vivaldi">}}
+{{<img src="img/vivaldi_logo" title="Logo de Vivaldi">}}
 
 Vivaldi es un programa moderno (lanzado en 2016, al igual que Brave) que busca ser el sucesor de otro navegador previamente popular: Opera. Personalmente sólo llegué a usar la versión para celulares de Opera: [OperaMini](https://en.wikipedia.org/wiki/Opera_Mini) y lo único que he escuchado de su versión de computadora son quejas por lo que no comentaré si Vivaldi lo logró superar. Al igual que Brave éste también se basa en Chromium.
 
@@ -87,7 +87,7 @@ En conclusión, Vivaldi me parece un buen navegador para usuarios poco experimen
 
 ### Firefox y Librewolf
 
-{{<figure src="./img/firefox_logo.png" title="Logo de Librewolf" alt="Logotipo de Librewolf junto con el de Firefox">}}
+{{<img src="img/firefox_logo.png" title="Logo de Librewolf" desc="Logotipo de Librewolf junto con el de Firefox">}}
 
 Firefox, lanzado inicialmente en 2002, fue por un tiempo uno de los navegadores más famosos y [populares](https://gs.statcounter.com/#desktop-browser-ww-monthly-201007-201007-bar) en la red, pero con el tiempo perdió mucha popularidad y ahora es poco usado. Su compañía desarrolladora también ha pasado por un periodo de decadencia: se ha visto envuelta en diversas controversias y ha agregado al programa base componentes [cuestionables](https://news.slashdot.org/story/15/06/09/1722236/mozilla-responds-to-firefox-user-backlash-over-pocket-integration). Por estas razones y muchas otras más, grupos independientes han comenzado a desarrollar versiones alternas del programa (los llamados 'forks'). Una en especial promete ser una versión de Firefox con todos los elementos problemáticos removidos, seguridad mejorada y complementos útiles que nos ayudan a tener una experiencia más privada en la red. Esta versión alterna se llama Librewolf, la recomiendo y me parece útil mencionarla a lo largo del segmento. 
 
