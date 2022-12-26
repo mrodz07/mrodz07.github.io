@@ -8,10 +8,11 @@ body {
   --body--FontSize: var(--global--main--FontSize);
   --body--light--Background: var(--global--light--Background);
   --body--light--FontColor: var(--global--light--FontColor);
-
   /* Choosed 10em for convenience*/
-  --body--minWidth: calc(var(--global--breakpoint--sm) - 10);
-  --body--maxWidth: calc(var(--global--breakpoint--lg) + 10);
+  --body--MinMaxWidthFactor: var(--global--MinMaxWidthFactor);
+
+  --body--minWidth: calc(var(--global--breakpoint--sm) - var(--body--MinMaxWidthFactor));
+  --body--maxWidth: calc(var(--global--breakpoint--lg) + var(--body--MinMaxWidthFactor));
 
   /*background-color: var(--body--light--Background);*/
 

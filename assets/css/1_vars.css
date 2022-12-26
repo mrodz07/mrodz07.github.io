@@ -5,6 +5,7 @@
   --global--main--HeaderFontFamily: 'QuickSand', sans-serif;
   --global--sans-serif--FontFamily: 'OpenSans', sans-serif;
   --global--monospace--FontFamily: none;
+  --global--MinMaxWidthFactor: 10em;
 
   /* Interface Colors */
   --global--primary--Color: #838323;
