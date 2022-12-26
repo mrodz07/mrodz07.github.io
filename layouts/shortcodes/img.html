@@ -29,9 +29,9 @@
 {{/* set the sizes attribute to (min-width: 35em) 1200px, 100vw unless overridden in shortcode */}}
 
 {{with $desc}}
-<figure class='image-frame'>
+<figure class='image-frame image-frame--article'>
 {{else}}
-<div class='image-frame'>
+<div class='image-frame image-frame--article'>
 {{end}}
 <img class='image-frame__image'
   {{ with .Get "title"}}title='{{.}}' alt='{{.}}'{{end}}

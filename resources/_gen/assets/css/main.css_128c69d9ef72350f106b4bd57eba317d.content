@@ -145,13 +145,15 @@
   --image-frame--MarginSpacer: var(--global--spacer--md);
   /* Odio important, odio important */
   margin-bottom: var(--image-frame--MarginSpacer) !important;
-  max-width: 50%;
   margin: auto;
   text-align: center; }
 
 .image-frame--main {
   margin: 0;
   max-width: 75%; }
+
+.image-frame--article {
+  max-width: 50%; }
 
 .image-frame__image {
   display: block;
@@ -168,7 +170,7 @@
 
 /* Using --global--breakpoint--md */
 @media only screen and (min-width: 50em) {
-  .image-frame {
+  .image-frame--article {
     max-width: 25%; } }
 
 .navbar {
