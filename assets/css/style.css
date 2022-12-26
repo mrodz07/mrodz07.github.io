@@ -9,8 +9,14 @@ body {
   --body--light--Background: var(--global--light--Background);
   --body--light--FontColor: var(--global--light--FontColor);
 
+  /* Choosed 10em for convenience*/
+  --body--minWidth: calc(var(--global--breakpoint--sm) - 10);
+  --body--maxWidth: calc(var(--global--breakpoint--lg) + 10);
+
   /*background-color: var(--body--light--Background);*/
 
+  min-width: var(--body--minWidth);
+  max-width: var(--body--maxWidth);
   font-size: var(--body--FontSize);
   color: var(--body--light--FontColor);
 }

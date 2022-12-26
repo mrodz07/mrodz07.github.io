@@ -4,7 +4,7 @@
   --page--FontFamily: var(--global--sans-serif--FontFamily);
   --page--Color: var(--global--light--Background);
 
-  --page--margin--Spacer: 0;
+  --page--margin--Spacer: auto;
 
   min-height: 100vh;
   margin: var(--page--margin--Spacer);

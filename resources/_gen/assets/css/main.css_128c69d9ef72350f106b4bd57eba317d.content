@@ -235,7 +235,7 @@
   --page--padding--Spacer: var(--global--spacer--md);
   --page--FontFamily: var(--global--sans-serif--FontFamily);
   --page--Color: var(--global--light--Background);
-  --page--margin--Spacer: 0;
+  --page--margin--Spacer: auto;
   min-height: 100vh;
   margin: var(--page--margin--Spacer);
   padding: var(--page--padding--Spacer);
@@ -317,7 +317,12 @@ body {
   --body--FontSize: var(--global--main--FontSize);
   --body--light--Background: var(--global--light--Background);
   --body--light--FontColor: var(--global--light--FontColor);
+  /* Choosed 10em for convenience*/
+  --body--minWidth: calc(var(--global--breakpoint--sm) - 10);
+  --body--maxWidth: calc(var(--global--breakpoint--lg) + 10);
   /*background-color: var(--body--light--Background);*/
+  min-width: var(--body--minWidth);
+  max-width: var(--body--maxWidth);
   font-size: var(--body--FontSize);
   color: var(--body--light--FontColor); }
 
