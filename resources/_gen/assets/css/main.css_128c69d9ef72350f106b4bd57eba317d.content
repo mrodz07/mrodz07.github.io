@@ -150,7 +150,8 @@
   text-align: center; }
 
 .image-frame--main {
-  margin: 0; }
+  margin: 0;
+  max-width: 75%; }
 
 .image-frame__image {
   display: block;
