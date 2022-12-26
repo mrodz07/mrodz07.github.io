@@ -149,6 +149,9 @@
   margin: auto;
   text-align: center; }
 
+.image-frame--main {
+  margin: 0; }
+
 .image-frame__image {
   display: block;
   max-width: 100%;

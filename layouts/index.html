@@ -2,7 +2,7 @@
 {{define "epilogue"}}
 {{$image := resources.Get "img/shared/foto_personal_sm.jpg"}}
   {{with $image}}
-  <div class='image-frame'>
+  <div class='image-frame image-frame--main'>
     <img class='image-frame__image' src='{{.Permalink}}' title='Una foto mia' alt='Una foto mia'>
   <div>
   {{end}}
