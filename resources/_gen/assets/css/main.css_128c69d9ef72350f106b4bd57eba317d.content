@@ -332,6 +332,8 @@ li::marker {
   text-align: center; }
 
 .image-frame--main {
+  display: flex;
+  align-items: center;
   margin: 0;
   max-width: 75%; }
 
@@ -396,6 +398,10 @@ li::marker {
   --navbar--anchor--hover--link--TextDecoration: var(--global--link--hover--TextDecoration);
   color: var(--navbar--anchor--hover--link--Color);
   text-decoration: var(--navbar--anchor--hover--link--TextDecoration); }
+
+.navbar__anchor--selected {
+  --navbar--item--selected--Color: var(--global--warning--Color);
+  color: var(--navbar--item--selected--Color); }
 
 .navbar--menu {
   --navbar--menu--margin--Spacer: var(--global--spacer--xs);
