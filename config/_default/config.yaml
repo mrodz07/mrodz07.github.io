@@ -29,5 +29,5 @@ menu:
     name: RSS
     pre: "/img/icons/feed.svg" 
     post: "Sígueme por RSS"
-    url: "/index.xml"
+    url: "/blog/index.xml"
     weight: 130
