@@ -11,13 +11,15 @@ menu:
 ---
 ## Hola! Soy Mario 
 
-Bienvenido a mi página. Soy un ingeniero en informática, puedes leer más sobre mí y lo que hago [aquí]({{<ref "/sobre_mi.md">}}).
+Bienvenido a mi sitio web. Soy ingeniero en computación. Puedes leer más sobre mí y lo que hago [aquí]({{<ref "/sobre_mi.md">}}).
 
-### Dentro de mi sitio encontrarás:
+### Dentro de mi página encontrarás:
 
-- [💻  Repositorios](https://git.mariorodriguez.xyz)
-- [📰  Blog]({{<ref "/blog">}})
-- 🎙️  Podcast (proximamente)
-- [✍️  Información de contacto](#list-networks)
+- 📢 Anuncios (proximamente)
+- [💻 Repositorios](https://git.mariorodriguez.xyz)
+- [📰 Blog]({{<ref "/blog">}})
+- 🎙️ Podcast (proximamente(cada vez más cerca))
+- 🐧 Extras (proximamente)
+- [📝 Información de contacto](#list-networks)
 
-Espero pases un buen rato y encuentres algo que te guste.
+Espero pases un buen rato y encuentres algo que sea de tu agrado.
