@@ -2,8 +2,8 @@
   <ul class='navbar__item-list'>
     {{with default site.Menus.main .siteMenu}}
       {{range .}}
-      <li class='navbar__item{{if (eq .Name $.context.Title)}} navbar__item--selected{{end}}'>
-        <a class='navbar__anchor' href='{{.URL | safeURL}}'>
+      <li class='navbar__item'>
+        <a class='navbar__anchor{{if (eq (lower .Name) (lower $.itemSelected))}} navbar__anchor--selected{{end}}' href='{{.URL | safeURL}}'>
         {{if .Pre}}
         <div class='navbar__svg'>
           {{printf "%s" (resources.GetMatch .Pre) | printf "%s%s" "assets/" | readFile | safeHTML}}

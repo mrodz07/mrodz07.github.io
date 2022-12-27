@@ -10,7 +10,7 @@
     <div class='page__header'>
       {{partialCached "header.html" (dict "context" .)}}
       {{block "navbar" .}}
-        {{partial "navbar.html" (dict "navbarModifier" "navbar--menu" "context" .)}}
+        {{partialCached "navbar.html" (dict "navbarModifier" "navbar--menu" "itemSelected" .Type "context" .) .Type}}
       {{end}}
     </div>
     {{end}}
