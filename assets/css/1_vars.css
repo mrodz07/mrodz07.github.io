@@ -13,6 +13,11 @@
   --global--danger--Color: #e1373d;
   --global--warning--Color: #832383;
   --global--disabled--Color: #acb3b9;
+  /* Crypto Colors */
+  --global--crypto--EthereumColor: #0c1c66;
+  --global--crypto--MoneroColor: #ff6600;
+  --global--crypto--AddressBackgroundColor: none;
+  --global--crypto--AddressTextColor: var(--global--warning--Color);
 
   /* Theme */
   --global--light--Background: #181929;

@@ -8,8 +8,8 @@ draft: false
 
 Puedes apoyar la página compartiéndola con tus amigos, descargando los distintos documentos que contiene, contactándome (ya sea por correo o xmpp), suscribiéndote al RSS y donando [monero](https://www.getmonero.org/) o [ether](https://ethereum.org).
 
-Dirección de ethereum: {{<etheraddr>}}
+Dirección de ethereum: {{<etherAddress>}}
 
-Dirección de monero: {{<moneroaddr>}}
+Dirección de monero: {{<moneroAddress>}}
 
-{{<cryptoqrs>}}
+{{<cryptoQrCodes>}}

@@ -1,0 +1,35 @@
+.crypto {
+  /*Holder for the items?? Is it valid in BEM??*/
+}
+
+.crypto__qr-codes {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  --crypto--qr-codes--Padding: var(--global--spacer--md);
+
+  padding: var(--crypto--qr-codes--Padding);
+}
+
+.crypto__address {
+  --crypto-address--BackgroundColor: var(--global--crypto--AddressBackgroundColor);
+  --crypto-address--TextColor: var(--global--crypto--AddressTextColor);
+
+  color: var(--crypto-address--TextColor);
+  word-wrap: break-word;
+  line-break: auto;
+  font-size: x-small;
+}
+
+.crypto__qr-codes--monero {
+  --crypto--adress--monero--BorderColor: var(--global--crypto--MoneroColor);
+  
+  border: 2px solid var(--crypto--adress--monero--BorderColor);
+}
+
+.crypto__qr-codes--ethereum {
+  --crypto--adress--ethereum--BorderColor: var(--global--crypto--EthereumColor);
+  
+  border: 2px solid var(--crypto--adress--ethereum--BorderColor);
+}
