@@ -2,13 +2,16 @@
   --image-frame--ImageWidth: var(--global--breakpoint--sm);
   --image-frame--MarginSpacer: var(--global--spacer--md);
 
-  display: flex;
-  align-items: center;
   /* Odio important, odio important */
   margin-bottom: var(--image-frame--MarginSpacer) !important;
+
+  margin: auto;
+  text-align: center;
 }
 
 .image-frame--main {
+  display: flex;
+  align-items: center;
   margin: 0;
   max-width: 75%;
 }
