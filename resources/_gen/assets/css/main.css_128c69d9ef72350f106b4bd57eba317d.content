@@ -37,7 +37,8 @@
 :root {
   /* Font */
   --global--main--FontSize: 18px;
-  --global--main--LineHeight: 1.3rem;
+  --global--main--HeaderLineHeight: 1.3rem;
+  --global--main--ContentLineHeight: 1.8rem;
   --global--main--HeaderFontFamily: 'QuickSand', sans-serif;
   --global--sans-serif--FontFamily: 'OpenSans', sans-serif;
   --global--monospace--FontFamily: none;
@@ -145,7 +146,7 @@ li::marker {
 .page__content h4,
 .page__content h5,
 .page__content h6 {
-  --header--LineHeight: var(--global--main--LineHeight);
+  --header--LineHeight: var(--global--main--HeaderLineHeight);
   --header--Spacer: var(--global--spacer--sm);
   line-height: var(--header--LineHeight);
   margin-bottom: var(--header--Spacer); }
@@ -156,7 +157,9 @@ li::marker {
 .page__content ol,
 .page__content code,
 .page__content figure {
+  --page--LineHeight: var(--global--main--ContentLineHeight);
   --elements--Spacer: var(--global--spacer--md);
+  line-height: var(--page--LineHeight);
   margin-bottom: var(--elements--Spacer); }
 
 .page__content p:last-child,
@@ -239,7 +242,7 @@ li::marker {
   list-style-type: none;
   border: var(--grid--item--BorderStyle);
   padding: var(--grid--item--Padding);
-  line-height: var(--global--main--LineHeight); }
+  line-height: var(--global--main--ContentLineHeight); }
 
 /* Odio important, odio important */
 .grid__item:last-child {

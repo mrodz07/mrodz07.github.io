@@ -54,7 +54,7 @@
 .page__content h4,
 .page__content h5,
 .page__content h6 {
-  --header--LineHeight: var(--global--main--LineHeight);
+  --header--LineHeight: var(--global--main--HeaderLineHeight);
   --header--Spacer: var(--global--spacer--sm);
 
   line-height: var(--header--LineHeight);
@@ -67,7 +67,10 @@
 .page__content ol,
 .page__content code,
 .page__content figure {
+  --page--LineHeight: var(--global--main--ContentLineHeight);
   --elements--Spacer: var(--global--spacer--md);
+
+  line-height: var(--page--LineHeight);
   margin-bottom: var(--elements--Spacer);
 }
 

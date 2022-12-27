@@ -25,7 +25,7 @@
   list-style-type: none;
   border: var(--grid--item--BorderStyle);
   padding: var(--grid--item--Padding);
-  line-height: var(--global--main--LineHeight);
+  line-height: var(--global--main--ContentLineHeight);
 }
 
 /* Odio important, odio important */
