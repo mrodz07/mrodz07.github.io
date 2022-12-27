@@ -22,4 +22,4 @@ Bienvenido a mi sitio web. Soy ingeniero en computación. Puedes leer más sobre
 - 🐧 Extras (proximamente)
 - [📝 Información de contacto](#list-networks)
 
-Espero pases un buen rato y encuentres algo que sea de tu agrado.
+Espero pases un buen rato y encuentres algo dentro de este sitio que te guste.
