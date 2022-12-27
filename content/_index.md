@@ -20,6 +20,6 @@ Bienvenido a mi sitio web. Soy ingeniero en computación. Puedes leer más sobre
 - [📰 Blog]({{<ref "/blog">}})
 - 🎙️ Podcast (proximamente(cada vez más cerca))
 - 🐧 Extras (proximamente)
-- [📝 Información de contacto](#list-networks)
+- [📝 Información de contacto]({{<ref "/contacto">}})
 
 Espero pases un buen rato y encuentres algo dentro de este sitio que te guste.
