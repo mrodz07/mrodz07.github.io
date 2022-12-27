@@ -1,5 +1,5 @@
-{{define "mainClass"}}error page{{end}}
-{{define "body"}}
-  <h1>Página no encontrada</h1>
+{{define "contentModifier"}}content--error{{end}}
+{{define "article"}}
+  <h2 class='article__error'>Página no encontrada</h2>
   {{.Content}}
 {{end}}

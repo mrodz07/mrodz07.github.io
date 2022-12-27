@@ -30,3 +30,11 @@
 
   margin: var(--article--tags--MarginVerticalSpacer) 0;
 }
+
+/* Not sure about this item */
+.article__error {
+  --article--error--TextColor: var(--global--danger--Color);
+
+  text-align: center;
+  color: var(--article--error--TextColor);
+}

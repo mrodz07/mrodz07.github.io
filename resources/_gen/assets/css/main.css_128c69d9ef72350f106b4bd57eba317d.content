@@ -209,6 +209,12 @@ li::marker {
   --article--tags--MarginVerticalSpacer: var(--global--spacer--sm);
   margin: var(--article--tags--MarginVerticalSpacer) 0; }
 
+/* Not sure about this item */
+.article__error {
+  --article--error--TextColor: var(--global--danger--Color);
+  text-align: center;
+  color: var(--article--error--TextColor); }
+
 .content {
   --content--BackgroundColor: var(--global--light--PageForeground);
   --content--margin--Spacer: var(--global--spacer--sm);
