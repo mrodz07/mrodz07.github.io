@@ -1,3 +1,6 @@
+{{define "navbar"}}
+  {{partialCached "navbar.html" (dict "navbarModifier" "navbar--menu" "itemSelected" "inicio" "context" .) "Inicio"}}
+{{end}}
 {{define "contentModifier"}}content--main{{end}}
 {{define "epilogue"}}
 {{$image := resources.Get "img/shared/foto_personal_sm.jpg"}}
