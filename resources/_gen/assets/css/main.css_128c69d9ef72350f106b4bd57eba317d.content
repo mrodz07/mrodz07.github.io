@@ -153,6 +153,7 @@ li::marker {
 .page__content h6 {
   --header--LineHeight: var(--global--main--HeaderLineHeight);
   --header--Spacer: var(--global--spacer--sm);
+  --header--Spacer: 0.7em;
   line-height: var(--header--LineHeight);
   margin-bottom: var(--header--Spacer); }
 
