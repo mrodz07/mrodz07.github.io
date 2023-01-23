@@ -11,7 +11,7 @@ menu:
 ---
 ## Hola! Soy Mario 
 
-Bienvenido a mi sitio web. Soy ingeniero en computación. Puedes leer más sobre mí [aquí]({{<ref "/sobre_mi.md">}}).
+Bienvenido a mi página web. Espero pases un buen rato y encuentres algo que te guste.
 
 ### Dentro de mi página encontrarás:
 
@@ -21,5 +21,4 @@ Bienvenido a mi sitio web. Soy ingeniero en computación. Puedes leer más sobre
 - 🎙️ Podcast (proximamente(cada vez más cerca))
 - 🐧 Extras (proximamente)
 - [📝 Información de contacto]({{<ref "/contacto">}})
-
-Espero pases un buen rato y encuentres algo dentro de este sitio que te guste.
+- [ 👨‍💻 Sobre mí]({{<ref "/sobre_mi">}})
