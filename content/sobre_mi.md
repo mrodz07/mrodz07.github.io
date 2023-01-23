@@ -7,8 +7,8 @@ draft: false
 
 ## Sobre mí
 
-Soy Mario Rodríguez, un ingeniero en informática, fanático de Linux, amante del software libre y la programación, principalmente en lenguajes de tercera generación.
+Hola! Soy Mario Rodríguez. Me dedico, principalmente, a la programación web (back-end). Además tengo conocimientos en el área de redes y administración de sistemas. Ahora mismo me encuentro trabajando y finalizando mis estudios de ingeniería. 
 
-Ahora mismo me encuentro terminando mis estudios. En mis ratos libres disfruto pasar el tiempo leyendo, principalmente sobre historia, religión y biología(en especial sobre aves). Igualmente me gusta revisar blogs de más personas en el ámbito informático y de vez en cuando jugar videojuegos de estrategia.
+Con respecto a mis pasatiempos disfruto leer, principalmente sobre historia y religión, escribir, cocinar, pasear y demás. Igualmente me gusta revisar los sitios de más personas y de vez en cuando jugar videojuegos de estrategia o disparos.
 
-Por cuenta propia me abstengo de usar redes sociales, si deseas contactarme, por cualquier motivo, hazlo por medio de la sección contacto. Intentaré contestarte prontamente y resolver cualquiera de tus inquietudes. 
+En cuanto a mis creencias: soy cristiano, tendiendo al protestantismo; siempre investigando más sobre las diferentes tradiciones que abarca la cristiandad. También creo en el derecho a la privacidad y la libertad de expresión.
