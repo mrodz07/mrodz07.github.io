@@ -1,4 +1,4 @@
-baseURL: https://mariorodriguez.xyz/
+baseURL: https://mariorod.neocities.org
 languageCode: es-mx
 title: Mario Rodríguez
 enableGitInfo: true
@@ -11,20 +11,14 @@ menu:
     name: Email
     pre: "/img/icons/email.svg"
     post: "Mi email personal"
-    url: "mailto:mario@mariorodriguez.xyz"
+    url: "mailto:mrodz_contacto@proton.me"
     weight: 100
   - identifier: Git
     name: Git
     pre: "/img/icons/git.svg"
     post: "Liga a mis repositorios personales"
-    url: "https://git.mariorodriguez.xyz"
+    url: "https://github.com/mrodz07"
     weight: 110
-  - identifier: Xmpp
-    name: Xmpp
-    pre: "/img/icons/xmpp.svg"
-    post: "Chat para conversar"
-    url: "xmpp:mra@trashserver.net"
-    weight: 120
   - identifier: Feed
     name: RSS
     pre: "/img/icons/feed.svg" 
