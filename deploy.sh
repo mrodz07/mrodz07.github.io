@@ -8,4 +8,4 @@
 # exit 0
 
 # Neocities
-hugo && neocities push public
+hugo --baseURL="mariorod.neocities.org" && neocities push public
