@@ -5,6 +5,7 @@ enableGitInfo: true
 Paginate: 9
 rssLimit: 20
 copyright: CC BY-SA
+enableRobotsTXT: true
 menu:
   footer:
   - identifier: Email
